@@ -22,7 +22,7 @@ The goals / steps of this project are the following:
 
 Below are the codes, video and images related to in this write up.
 * Codes
-  1. `lesson_functions.py`
+  1. `lesson_functions.py`
     Some helper functions are defined in this file. All codes are almost identical to the codes presented in Udacity lesson. This file is imported in the following 2 ipython notebook.
   1. `train_classifier.ipynb`
     Here, SVM classifier was trained using dataset images. The classifier is saved as a pickle file named "svc.pickle".

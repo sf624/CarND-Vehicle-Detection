@@ -17,8 +17,8 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 [example]: ./output_images/image_example.jpg
 [hog0]: ./output_images/ch0_and_hog.jpg
-[hog1]: ./output_images/ch0_and_hog.jpg
-[hog2]: ./output_images/ch0_and_hog.jpg
+[hog1]: ./output_images/ch1_and_hog.jpg
+[hog2]: ./output_images/ch2_and_hog.jpg
 [sliding_window]: ./output_images/sliding_window.jpg
 [image5]: ./examples/bboxes_and_heat.png
 [image6]: ./examples/labels_map.png
@@ -30,8 +30,9 @@ Below are the codes, video and images related to in this write up.
   1. lesson_functions.py
     Some helper functions are defined in this file. All codes are almost identical to the codes presented in Udacity lesson. This file is imported in the following 2 ipython notebook.
   1. train_classifier.ipynb
-    Here, SVM classifier was traind using dataset images.
+    Here, SVM classifier was trained using dataset images. The classifier is saved as a pickle file named "svc.pickle".
   1. project_notebook.ipynb
+    This is where the project video was actually processed. Classifier trained at train_classifier.ipynb was used.
 * Videos
   1. project_video.mp4
     Original video before processing.

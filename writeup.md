@@ -27,21 +27,21 @@ The goals / steps of this project are the following:
 
 Below are the codes, video and images related to in this write up.
 * Codes
-  1. lesson_functions.py
+  1. `lesson_functions.py`
     Some helper functions are defined in this file. All codes are almost identical to the codes presented in Udacity lesson. This file is imported in the following 2 ipython notebook.
-  1. train_classifier.ipynb
+  1. `train_classifier.ipynb`
     Here, SVM classifier was trained using dataset images. The classifier is saved as a pickle file named "svc.pickle".
-  1. project_notebook.ipynb
+  1. `project_notebook.ipynb`
     This is where the project video was actually processed. Classifier trained at train_classifier.ipynb was used.
 * Videos
-  1. project_video.mp4
+  1. `project_video.mp4`
     Original video before processing.
-  1. project_video_result.mp4
+  1. `project_video_result.mp4`
     Final output of this project, which contains bounding boxes that detect cars and corresponding (translucent) heat map.
 * Images
-  1. dataset/
+  1. `dataset/`
     Images that were used for training SVM classifier. Provided by Udacity.
-  1. output_images/
+  1. `output_images/`
     Images used for explanation in this write up.
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points

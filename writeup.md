@@ -56,7 +56,7 @@ I started by reading in all the `vehicle` and `non-vehicle` images (2nd code cel
 I then explored different color spaces and different `skimage.hog()` parameters (`orientations`, `pixels_per_cell`, and `cells_per_block`).  I grabbed random images from each of the two classes and displayed them to get a feel for what the `skimage.hog()` output looks like.
 
 Here is an example using the `YCrCb`
- color space and OG param1ters of `orientations=8`, `pixels_per_cell=(8, 8)` and `cells_per_block=(2, 2)`2
+ color space and OG param1ters of `orientations=8`, `pixels_per_cell=(8, 8)` and `cells_per_block=(2, 2)`
 
 
 ![alt text][hog0]
@@ -67,6 +67,8 @@ Here is an example using the `YCrCb`
 
 I tried various combinations of parameters and chose one that have shown highest test accuracy. As a result I have chosen the following parameters' combination.
 
+| Parameter | Value |
+|:--|:--|
 | Color space | YCrCb |
 | HOG orientation | 8 |
 | HOG pixels per cell | (8,8) |
@@ -82,7 +84,7 @@ I trained a linear SVM using scikit-learn library, which is written in 4th code 
 
 #### 1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
 
-I decided to search window positions between 400-656 pixels in y-axis, which has potential of car exisistence, and at 3 kind of scales: 64*64, 92*92 and 128*128 pixels. The codes are in 3rd code cell @ project_notebook.ipynb.
+I decided to search window positions between 400-656 pixels in y-axis, which has potential of car exisistence, and at 3 kind of scales: 64*64, 92*92 and 128*128 pixels. The overlap of window was set to 80%, not to miss the detection. In order to decrease the computation cost, HOG feature was computed only once on the entire region, and then the HOG feature in each window was computed by just subsampling. The codes are in 3rd code cell @ project_notebook.ipynb.
 
 #### 2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 

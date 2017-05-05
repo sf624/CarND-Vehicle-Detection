@@ -84,7 +84,7 @@ I trained a linear SVM using scikit-learn library, which is written in 4th code 
 
 #### 1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
 
-I decided to search window positions between 400-656 pixels in y-axis, which has potential of car exisistence, and at 3 kind of scales: 64*64, 92*92 and 128*128 pixels. The overlap of window was set to 80%, not to miss the detection. In order to decrease the computation cost, HOG feature was computed only once on the entire region, and then the HOG feature in each window was computed by just subsampling. The codes are in 3rd code cell @ project_notebook.ipynb.
+I decided to search window positions between 400-656 pixels in y-axis, which has potential of car exisistence, and at 3 kind of scales: 64 by 64, 92 by 92 and 128 by 128 pixels. The overlap of window was set to 80%, not to miss the detection. In order to decrease the computation cost, HOG feature was computed only once on the entire region, and then the HOG feature in each window was computed by just subsampling. The codes are in 3rd code cell @ project_notebook.ipynb.
 
 #### 2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
